@@ -1,0 +1,97 @@
+[
+ {
+  "employee_id": "E001",
+  "date": "2024-11-03",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E001",
+  "date": "2024-10-05",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E002",
+  "date": "2024-10-13",
+  "status": "Absent"
+ },
+ {
+  "employee_id": "E004",
+  "date": "2024-09-20",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E005",
+  "date": "2024-10-27",
+  "status": "Absent"
+ },
+ {
+  "employee_id": "E006",
+  "date": "2024-09-05",
+  "status": "Absent"
+ },
+ {
+  "employee_id": "E008",
+  "date": "2024-10-29",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E009",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E002",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E004",
+  "date": "2024-10-23",
+  "status": "Absent"
+ },
+ {
+  "employee_id": "E004",
+  "date": "2024-10-30",
+  "status": "Absent"
+ },
+ {
+  "employee_id": "E002",
+  "date": "2024-10-05",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E0010",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E0011",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E0012",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E005",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E006",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E024",
+  "date": "2024-10-30",
+  "status": "Present"
+ },
+ {
+  "employee_id": "E006",
+  "date": "2024-10-15",
+  "status": "Absent"
+ }
+]
