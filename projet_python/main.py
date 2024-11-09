@@ -69,16 +69,19 @@ def gui_mark_attendance():
     
     ctk.CTkButton(id_frame, text="Ajouter nouvel ID", command=update_employee_id).pack(pady=5)
     
+    # Sélection de la date
     ctk.CTkLabel(dialog, text="Date (YYYY-MM-DD):").pack(pady=5)
     date_entry = DateEntry(dialog, width=12, background='darkblue', foreground='white', 
                           borderwidth=2, date_pattern='yyyy-mm-dd')
     date_entry.pack(pady=5)
     
+     # Sélection du statut de présence
     ctk.CTkLabel(dialog, text="Statut:").pack(pady=5)
     status_menu = ctk.CTkOptionMenu(dialog, values=["Present", "Absent"], variable=status)
     status_menu.pack(pady=5)
     
     def submit():
+        """Enregistre la présence de l'employé sélectionné ou saisi."""
         if id_entry.get().strip():
             raw_id = id_entry.get().strip()
             formatted_id = validate_and_format_id(raw_id)
@@ -93,6 +96,7 @@ def gui_mark_attendance():
         messagebox.showinfo("Résultat", result)
         dialog.destroy()
     
+     # Boutons pour enregistrer ou annuler
     buttons_frame = ctk.CTkFrame(dialog)
     buttons_frame.pack(pady=10, fill="x", padx=20)
     
@@ -155,6 +159,7 @@ def gui_search_employee():
     id_entry.pack(pady=5)
     
     def search():
+        """Recherche les enregistrements de présence pour un ID employé donné."""
         raw_id = id_entry.get().strip()
         
         if not raw_id:
@@ -240,6 +245,7 @@ def gui_generate_summary():
     # Attendre que la fenêtre soit fermée
     summary_dialog.wait_window()
 
+# changer de mode
 def toggle_appearance_mode():
     if ctk.get_appearance_mode() == "Dark":
         ctk.set_appearance_mode("Light")
@@ -248,6 +254,7 @@ def toggle_appearance_mode():
         ctk.set_appearance_mode("Dark")
         mode_switch.configure(text="Mode Clair")
 
+#Affichage de l'interface principale
 def display_interface():
     ctk.set_appearance_mode("Dark")
     ctk.set_default_color_theme("blue")
@@ -256,6 +263,7 @@ def display_interface():
     window.title("Système de gestion des présences des employés")
     window.geometry("400x400")
 
+#Message de confirmation pour quitter
     def confirm_quit():
         """Affiche une boîte de dialogue de confirmation avant de quitter."""
         if messagebox.askokcancel("Confirmation", 
