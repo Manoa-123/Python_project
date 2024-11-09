@@ -4,14 +4,14 @@ import os
 ATTENDANCE_FILE = "attendance_records.txt"
 
 def load_records():
-    """Load attendance records from file."""
+    """Charger les enregistrements de présence depuis un fichier"""
     if os.path.exists(ATTENDANCE_FILE):
         with open(ATTENDANCE_FILE, 'r') as file:
             return json.load(file)
     return []
 
 def save_records(records):
-    """Save attendance records to file."""
+    """Enregistrer les enregistrements de présence dans un fichier"""
     with open(ATTENDANCE_FILE, 'w') as file:
         json.dump(records, file, indent=1,ensure_ascii=False)
 
